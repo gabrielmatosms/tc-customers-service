@@ -24,7 +24,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=tc-customers-service
+            -Dsonar.projectKey=gabrielmatosms_tc-customers-service
             -Dsonar.organization=gabrielmms-tc
             -Dsonar.verbose=true
           projectBaseDir: .
