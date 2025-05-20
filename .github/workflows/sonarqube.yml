@@ -1,4 +1,4 @@
-name: SonarCloud Analysis
+name: SonarCloud
 
 on:
   push:
@@ -8,8 +8,8 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  sonarqube:
-    name: SonarCloud Scan
+  sonarcloud:
+    name: SonarCloud Analysis
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v5.0.0
+        uses: SonarSource/sonarcloud-github-action@master
         with:
-          host-url: https://sonarcloud.io
-          token: b7c211af9acb7000e04ce1f5dcb40b205be79ffa
+          organization: gabrielmms-tc
+          projectKey: tc-customers-service
+          token: ${{ secrets.SONAR_TOKEN }}
