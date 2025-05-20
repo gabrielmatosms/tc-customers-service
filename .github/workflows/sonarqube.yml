@@ -31,4 +31,4 @@ jobs:
         with:
           organization: gabrielmms-tc
           projectKey: tc-customers-service
-          token: ${{ secrets.SONAR_TOKEN }}
+          token: b7c211af9acb7000e04ce1f5dcb40b205be79ffa
