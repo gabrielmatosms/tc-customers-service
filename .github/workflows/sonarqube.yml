@@ -30,4 +30,4 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v5.0.0
         with:
           host-url: https://sonarcloud.io
-          token: ${{ secrets.SONAR_TOKEN }}
+          token: b7c211af9acb7000e04ce1f5dcb40b205be79ffa
