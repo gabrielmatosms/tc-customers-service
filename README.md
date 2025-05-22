@@ -52,15 +52,6 @@ This project follows a **hexagonal architecture** (also known as ports and adapt
 
 (Local) The FastAPI Swagger UI is available at: [http://localhost:8009/docs](http://localhost:8009/docs)
 
-
-## Videos Explanations Links
-
-Part 1 - [https://www.youtube.com/watch?v=B26AEoMjJgU](https://www.youtube.com/watch?v=B26AEoMjJgU) (Architecture representation) - Fase 1
-
-Part 2 - [https://www.youtube.com/watch?v=ZrnqsGbtpDw](https://www.youtube.com/watch?v=B26AEoMjJgU) (API use) - Fase 2
-
-Part 3 - [https://youtu.be/DgDAjOqwkTc](https://youtu.be/DgDAjOqwkTc) (API use) - Fase 3
-
 ## Workflow Representations
 
 Video explicando a arquitetura dos microserviços - [https://www.youtube.com/watch?v=lWntA32xC7I](https://www.youtube.com/watch?v=lWntA32xC7I) - Fase 4
