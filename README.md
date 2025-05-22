@@ -4,15 +4,6 @@
 
 This project is a backend application designed to manage orders and facilitate efficient customer service as the business expands. Using **FastAPI** with a **hexagonal architecture**, the application allows customers to place and track orders and allows administrators to manage products, customers, and orders. It’s built as a monolithic application with a **PostgreSQL** database, containerized for easy deployment using **Docker** and **Docker Compose**.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Setup and Installation](#setup-and-installation)
-- [Environment Variables](#environment-variables)
-- [API Endpoints](#api-endpoints)
-
 ## Overview
 
 This application streamlines the ordering process by:
@@ -71,4 +62,9 @@ Part 2 - [https://www.youtube.com/watch?v=ZrnqsGbtpDw](https://www.youtube.com/w
 Part 3 - [https://youtu.be/DgDAjOqwkTc](https://youtu.be/DgDAjOqwkTc) (API use)
 
 ## Workflow Representations
+
+Video explicando a arquitetura dos microserviços - [https://www.youtube.com/watch?v=lWntA32xC7I](https://www.youtube.com/watch?v=lWntA32xC7I)
+
+** Acesse o [miro](https://miro.com/app/board/uXjVIy2LsaY=/)
+![Diagram de Micro-Servicos](https://github.com/user-attachments/assets/0ea2dc40-3047-4001-88b7-61858c7c9bc9)
 
