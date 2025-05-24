@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  customers_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8009:8000"
+    environment:
+      - SQL_DATABASE_URL=${SQL_DATABASE_URL}
+      - API_PREFIX=/api/v1
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

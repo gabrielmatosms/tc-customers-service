@@ -42,7 +42,16 @@ This project follows a **hexagonal architecture** (also known as ports and adapt
    - [Docker](https://docs.docker.com/get-docker/)
    - [Docker Compose](https://docs.docker.com/compose/install/)
 
-3. **Build and run the application** using Docker Compose:
+3. **Create a ``.env`` file based on ``.env.example``, which contains example environment variables. Without this ``.env`` file, the project will not run correctly.**
+
+   ```
+      SQL_DATABASE_URL=postgresql://user:password@postgres:5432/customers_service
+      POSTGRES_USER=user
+      POSTGRES_PASSWORD=password
+      POSTGRES_DB=customers_service
+   ```
+
+4. **Build and run the application** using Docker Compose:
 
    ```bash
    docker-compose up --build -d
