@@ -5,12 +5,10 @@ from sqlalchemy.orm import Session
 
 from app.domain.interfaces.customer_repository import CustomerRepository
 from .sql_customer_repository import SQLCustomerRepository
-from .nosql_customer_repository import NoSQLCustomerRepository
 
 
 class RepositoryType(str, Enum):
     SQL = "sql"
-    NOSQL = "nosql"
 
 
 def get_customer_repository(
@@ -20,5 +18,3 @@ def get_customer_repository(
         if not db_session:
             raise ValueError("DB session is required for SQL repository")
         return SQLCustomerRepository(db_session)
-    else:
-        return NoSQLCustomerRepository()
